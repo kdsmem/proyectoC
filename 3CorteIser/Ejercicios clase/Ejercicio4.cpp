@@ -1,27 +1,44 @@
-//Una estacion ambiental realiza la medicion de la temperatura maxima diaria durante los ultimos 7 dias de la semana en una zona rural. Debido al cambio climatico, es importante analizar los dias con temperaturas fuera de lo normal.
-//Escriba un programa que:
-//1.Permita ingresar las 7 temperaturas maximas registradas (en °c ) y las almacene en un vector.
-//Determine: 1. El dia (indice) en el que se registro la mayor temperatura., 2.Cuantos dias tuvieron temperaturas por encima de 35°C (Alerta de calor extremo). , 3.El promedio semanal de temperatura.
-//Finalmente, imprima el vector original con sus valores, la temperatura maxima con su posicion, la cantidad de dias criticos, y el promedio semanal.
-
+//Calcular la media arimetica ponderada segun la siguiente formula 
 #include <iostream>
 using namespace std;
 
 int main(){
+	int n,x,w,i;
+	int a=0;
+	float suma=0;
+	float total=0;
+	int Notas[0];
 	
-	int Semana[7];
-	int Temperatura;
-	int Dia1=0, MayorT=0;
+	cout<<" A continuacion ingrese la cantidad de notas a promediar: "<<endl;
+	cin>>n;
+	int Elementos[n];
+	int Lista[n];
+	int Resultado[n];
 	
-	for(int i=1; i<=7; i++){
-		cout<<"Ingresar la temperatura del dia "<<i<<endl;
-		cin>>Semana[i]; cout<<" °C "<<endl; 
-		if(Semana[i]>MayorT){
-		MayorT=Semana[i];
+	for(int i=0; i<n; i++){
+		cout<<"Ingrese las notas individualmente a promediar: "<<endl;
+		cin>>Elementos[i];
 	}
+	for(int i=0; i<n; i++){
+		cout<<"Ingrese las posiciones de notas: "<<endl;
+		cin>>Lista[i];
 	}
-	cout<<"El dia con mayor temperatura fue: "<<MayorT<<" °C "<<endl;
+	for(int i=0; i<n; i++){
+		cout<<"Numeros ingresados ["<<i<<"]="<<Elementos[i]<<endl;
+		cout<<"Posicion de notas  ["<<i<<"]="<<Lista[i]<<endl;
+	}
+	for(int i=0; i<n; i++){
+		suma=Elementos[i]*Lista[i];	
+		total+=suma;
+		total=
+	}
+	
+	cout<<"El resultado total de las notas promediadas son: "<<total<<endl;
+	
+	}
 	
 	
-	return 0;
-}
+	
+	
+	
+	

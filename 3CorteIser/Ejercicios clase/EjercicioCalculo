@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	float x,e,n;
+	int vector[5];
+	int a;
+	for(int i =0; i <5; i++){
+	cout<<"ingrese el primer numero ["<<i<<"]"<<endl;
+     
+	} 
+	cout<<"el valor total del vector es :"<<e/n<<endl;
+	
+	return 0; 
+} 

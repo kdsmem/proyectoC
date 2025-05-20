@@ -1,33 +1,30 @@
-//Una estacion ambiental realiza la medicion de la temperatura maxima diaria durante los ultimos 7 dias de la semana en una zona rural. Debido al cambio climatico, es importante analizar los dias con temperaturas fuera de lo normal.
-//Escriba un programa que:
-//1.Permita ingresar las 7 temperaturas maximas registradas (en °c ) y las almacene en un vector.
-//Determine: 1. El dia (indice) en el que se registro la mayor temperatura., 2.Cuantos dias tuvieron temperaturas por encima de 35°C (Alerta de calor extremo). , 3.El promedio semanal de temperatura.
-//Finalmente, imprima el vector original con sus valores, la temperatura maxima con su posicion, la cantidad de dias criticos, y el promedio semanal.
-
 #include <iostream>
 using namespace std;
 
 int main(){
+	int Lista[7]={2,3,8,18,10,30,20};
+	int a=0, b=0;
 	
-	int Semana[7];
-	int Temperatura;
-	int Dia1=0, MayorT=0;
+	cout<<"Bienvenido al calculador de las posiciones de los numeros segun su vector: "<<endl;
 	
-	for(int i=1; i<=7; i++){
-		cout<<"Ingresar la temperatura del dia "<<i<<endl;
-		cin>>Semana[i]; cout<<" °C "<<endl; 
-		if(Semana[i]>MayorT){
-		MayorT=Semana[i];
+	for(int i=1; i<7; i+=2){
+		cout<<" En el lugar: "<<i<<" Se encuentra: "<<Lista[i]<<endl;
+		a=a+1;
 	}
+	
+	int Listav2[a];
+	for(int j=1; j<7; j+=2){
+		Listav2[b]=Lista[j];
+		b=b+1;
 	}
-	cout<<"El dia con mayor temperatura fue: "<<MayorT<<" °C "<<endl;
 	
+	cout<<" Los nuevos numeros del nuevo vector son: "<<endl;
 	
-	
-	
-	
-	
-	
+	for(int ii=0; ii<a; ii++){
+		cout<<"Listav2 ["<<Listav2[ii]<<"]"<<endl;
+	}
 	
 	return 0;
-}
+	}
+	
+
