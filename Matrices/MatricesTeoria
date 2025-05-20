@@ -1,0 +1,17 @@
+// Matrices Teoria
+¿Que es un arreglo bidimensional?
+Un arreglo bidimensional en es una tabla de datos organizada en filas y columnas.
+Se puede ver como un arreglo de arreglos.
+3 filas x 3 columnas 
+Ejemplo:
+       COL 1, COL 2, COL 3
+Fila 1 [  1 ,   2  ,   3  ]
+Fila 2 [  4 ,   5  ,   6  ]
+Fila 3 [  7 ,   8  ,   9  ]
+
+Declaracion General de Matrices:
+- tipo nombre[FILAS][COLUMNAS];
+
+
+
+
